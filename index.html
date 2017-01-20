@@ -1,43 +1,184 @@
 <html>
     <head>
+        <title>Adit Patel</title>
         
-        <title>
-            Basketball by Adit
-        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/288803328e.js"></script>
+
+
         
+        <style type = "text/css">
+            .jumbotron{
+                
+                background-image: url(images/bground.jpeg);
+                background-size: cover;
+                background-position: 50% 35%;
+                color: white;
+                text-align: center;
+            }
+            
+            #etc{
+                font-size: 50%;
+                
+            }
+            
+            #propic{
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                zoom: 200%;
+            }
+            
+            .title{
+                color: darkred;
+                
+            }
+            
+            .list{
+                display: inline-block;
+            }
+            
+            #scroll{
+                font-size: 50%;
+            }
+            
+            .center{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            
+            #download{
+                padding-bottom: 0;
+                margin-bottom: 0;
+                color: white;
+            }
+            
+            #icons{
+                color: white;
+            }
+            
+            .white{
+                color: white;
+                padding-right: 8px;
+            }
+            
+            body{
+                position: relative;
+            }
+            $('body').scrollspy({ target: '.navbar' })
+        </style>
+
     </head>
     
-    <body>
-        
-        <h1>Adit's favorite team:</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/B-EtM4KuHSA" frameborder="0" allowfullscreen></iframe>
-        <p id = "some"> The grizzlies, somehow. </p>
-        <hr>
-        <h2> why???</h2>
-        <ul>
-            <li> Rudy Gay</li>
-            <li> Marc Gasol</li>
-        </ul>
-        <hr>
-        <h2> 
-           3 favorite playsers 
-        </h2>
-        <ol>
-            <li> <del>Rudy Gay</del></li>
-            <li>Kevin Durant</li>
-            <li>Aldrige</li>
-        </ol>
-        
-        <hr>
-       <a href="http://www.w3schools.com/html/">Visit our HTML tutorial</a>
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-danger" id = "bar">
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <a class = "navbar-brand" href = "#me" >Adit Patel</a>
 
-        <a href = "#some"> click here to go above</a>
-        <a href  = "https://www.facebook.com/" > <img  src = "http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/mem.png" alt = "Logo"></a>
-        <p>Favorite players on grizzly?:</p>
-        <form>
-            <input type = "text" name = "firstname">
-            <input type = "submit" value = "Click here to finish up">
-        </form>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutme">About Me<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            
+        <div class="jumbotron" id = "me">
+          <h1 class="display-3">Adit Patel <span id = "etc">        | Coder | Learner | Entrepenur</span></h1>
+          <p class="lead">“Live as if you were to die tomorrow. Learn as if you were to live forever.”</p>
+          <p class = "lead">- Mahatma Gandhi</p>
+          <hr class="my-4">
+            <a href = "https://www.dropbox.com/s/xrdpmsb7zvk3op8/Adit_RESUME.docx?dl=0" id = "download">Download Resume here</a>
+            
+            <!--Icons-->   
+            <div id = "icons">
+                <a href = "mailto:adit.patel@rutgers.edu? Subject = Hello Adit"><i class="fa fa-envelope fa-2x white" aria-hidden="true"></i></a>
+                <a href = "https://github.com/adpa22"><i class="fa fa-github white fa-2x" aria-hidden="true"></i></a>
+                <a href = "tel:17326406814"><i class="fa fa-phone white fa-2x" aria-hidden="true"></i></a>
+                <a href = "https://www.linkedin.com/in/adpa22"><i class="fa fa-linkedin white fa-2x" aria-hidden="true"></i></a>
+                
+            </div>
+        </div>
+        
+        
+        <div class = "center">
+        <img id = "propic" class = "img-responsive center-block" src = "images/pro%20copy.jpg">
+        </div>
+        <div class = "container"  id = "aboutme">
+               
+            <div id = "about">
+                <h1 class = "title">About Me</h1>
+                <p class = "lead">As a current student at Rutgers - New Brunswick, I am currently working for my B.S in Computer Science and my minor in Economics. I am always looking for ways to further my education in general and would love an opportunity for me to do so. I enjoy playing basketball.</p>
+            </div>
+        </div>
+           
+        <div class = "container" id = "skills">
+            <div id = "resume" >
+                <h1 class = "title">Skills <span id = "scroll">(Scroll over for rating)</span></h1>
+                <h2>Web Development</h2>
+                <ul class = "list">
+                    
+                    
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">HTML</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">CSS</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">JavaScript</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">jQuery</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Bootstrap</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9734">AJAX</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9734&#9734&#9734(Currently Learning)">PHP</li>
+                </ul>
+                <h2>Application Development</h2>
+                <ul class = "list">
+                    <li data-toggle = "tooltip" title = "&#9733&#9733&#9733&#9733&#9733" data-placement = "right" >Java</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">C</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9734&#9734&#9734 (Currently Learning)">Python</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9734&#9734&#9734">Matlab</li>
+                </ul>
+                
+                <h2>Software</h2>
+                <ul class = "list">
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Microsoft Office</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Eclipse</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9734">XCode</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Sublime Text</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Brackets</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9734&#9734">Android Studio</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Terminal</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Github</li>
+                </ul>
+                
+                <h2>Operating Systems</h2>
+                <ul class = "list">
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Windows 7</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">Windows 10</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9733&#9733">OSX</li>
+                    <li data-toggle = "tooltip" data-placement = "right" title = "&#9733&#9733&#9733&#9734&#9734">Ubuntu</li>
+                </ul>
+            </div>
+        </div>
+        
+      
+        
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+        
+        <script type="text/javascript">
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+            </script>
 
     </body>
     
